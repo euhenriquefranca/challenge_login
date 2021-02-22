@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import ImageLogo from '../assets/image-logo.svg'
-import { Container } from '../styles/pages/Home'
+import { Container, InputEmail, InputSenha, LogoImage, ButtonEntrar, TextButton } from '../styles/pages/Home'
 
 const Home: React.FC = () => {
   return (
@@ -10,10 +10,21 @@ const Home: React.FC = () => {
       <Head>
         <title>Homepage</title>
       </Head>
+      <LogoImage>
+
         <ImageLogo />
-        <h1>Olá, seja
-          bem-vindo!
+      </LogoImage>
+      <h1>
+        Olá, seja bem-vindo!
         </h1>
+      <p>
+        Para acessar a plataforma, faça seu login.
+        </p>
+      <InputEmail placeholder=" user.name@mail.com" type="text" />
+      <InputSenha placeholder=" ********" type="text" />
+      <ButtonEntrar>
+        ENTRAR
+      </ButtonEntrar>
     </Container>
   )
 }

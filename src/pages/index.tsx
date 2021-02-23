@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
-import ImageLogo from '../assets/image-logo.svg'
-import { Container, InputEmail, InputSenha, LogoImage, ButtonEntrar, TextButton } from '../styles/pages/Home'
+import ImageLogo from '../assets/image-desktop.svg'
+import { Container, InputEmail, InputSenha, LogoImage, ButtonEntrar, EsqueceuSenha, Email, Senha } from '../styles/pages/Home'
 
 const Home: React.FC = () => {
   return (
@@ -10,21 +10,27 @@ const Home: React.FC = () => {
       <Head>
         <title>Homepage</title>
       </Head>
-      <LogoImage>
-
-        <ImageLogo />
-      </LogoImage>
+      <div>
+        <LogoImage>
+          <ImageLogo />
+        </LogoImage>
+      </div>
       <h1>
         Olá, seja bem-vindo!
         </h1>
       <p>
         Para acessar a plataforma, faça seu login.
-        </p>
+      </p>
+      <Email>E-MAIL</Email>
       <InputEmail placeholder=" user.name@mail.com" type="text" />
       <InputSenha placeholder=" ********" type="text" />
-      <ButtonEntrar>
+      <ButtonEntrar type="submit">
         ENTRAR
       </ButtonEntrar>
+      <Senha>SENHA</Senha>
+      <EsqueceuSenha>
+        Esqueceu seu login ou senha? Clique aqui
+        </EsqueceuSenha>
     </Container>
   )
 }

@@ -8,6 +8,8 @@ export default createGlobalStyle`
   }
 
   body {
+    display: flex;
+    justify-content: center;
     background: ${props => props.theme.colors.background};
     color: ${props=> props.theme.colors.text};
     font: 400 16px Montserrat, sans-serif;
